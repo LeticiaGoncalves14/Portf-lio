@@ -112,6 +112,10 @@ ul li a:hover {
   margin-bottom: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .projeto-card h3 {
   font-size: 1.2em;
@@ -192,4 +196,22 @@ footer a {
 }
 footer a:hover {
   color: #ffffff;
+}
+@media (max-width: 768px) {
+  .header {
+      padding: 15px 0;
+      font-size: 1.2rem;
+  }
+  .project-item {
+      padding: 10px;
+      font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .header h1 {
+      font-size: 1rem;
+  }
+  .container {
+      flex-direction: column;
+  }
 }
