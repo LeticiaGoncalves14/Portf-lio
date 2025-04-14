@@ -1,0 +1,195 @@
+body {
+  background-color: #001f3f; /* azul marinho */
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  background-color: #001f3f;
+  padding: 30px 20px;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.4em;
+  color: #7FDBFF; /* azul claro */
+}
+
+.menu {
+  margin-top: 15px;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.menu li a {
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.menu li a:hover {
+  background-color: #7FDBFF;
+  color: #001f3f;
+}
+
+h1, h2, h3 {
+  color: #7FDBFF;
+}
+
+p {
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+
+ul li a:hover {
+  background-color: #7FDBFF;
+  color: #001f3f;
+}
+
+/* Seções e cards padrão */
+.section, .section-alt, section article {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Volta para layout padrão (um abaixo do outro) */
+#projetos {
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Card individual */
+.projeto-card {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  text-align: left;
+}
+
+.projeto-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.projeto-card h3 {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+  color: #7FDBFF;
+}
+
+.projeto-card p {
+  color: white;
+  font-size: 0.95em;
+}
+
+/* Formulário e botões */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #7FDBFF;
+  color: #001f3f;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: white;
+  color: #001f3f;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #000c1a;
+  border-top: 2px solid #7FDBFF;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+}
+footer ul li {
+  display: inline;
+}
+footer a {
+  color: #7FDBFF;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #ffffff;
+}
